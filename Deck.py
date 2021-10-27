@@ -12,8 +12,6 @@ class Deck:
         for x in suits:
             for y in values:
                 card = Card(x,y)
-#                card.suit = x
-#                card.value = y
                 self.deck.append(card)
 #create showDeck functionality that prints the suit and value of each card object in the deck list 
     def showDeck(self):
