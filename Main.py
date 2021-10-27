@@ -13,12 +13,12 @@ from Deck import *
 player = Player("Tom",[]) #Question: why can not initialize object with list contents e.g. player = Player("Tom",["apple", banana"])
 print(player.name, player.hand)
 #initialize a hardcoded object of class Card with the suit Spades and the value 1
-card = Card("Spades",1)
-print(card.suit, card.value)
+card = Card("Spades",1,False)
+print(card.suit, card.value, card.covered)
 #call the addCardToHand function for the previously created player and the previously created card objects
 player.addCardToHand(card)
 for card in player.hand:
-	print(card.suit, card.value)
+	print(card.suit, card.value, card.covered)
 #call the disposeCardofHand function for the previously created player and the previously created card objects
 player.disposeCardOfHand(card)
 print(player.hand)

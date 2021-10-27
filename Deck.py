@@ -11,13 +11,14 @@ class Deck:
         values = [1,2,3,4,5,6,7,8,9,"Jack", "Queen", "King", "Ace"]
         for x in suits:
             for y in values:
-                card = Card(x,y)
+                card = Card(x,y,True)
                 self.deck.append(card)
 #create showDeck functionality that prints the suit and value of each card object in the deck list 
     def showDeck(self):
         for card in self.deck:
-            print(card.suit, card.value)
+            print(card.suit, card.value, card.covered)
 #upcoming functionality to shuffle the deck
     def shuffleDeck(self):
+
         return self
     
